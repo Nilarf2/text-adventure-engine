@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "characters": {
+    "traveler": { "name": "旅人", "aliases": [] },
+    "guide": { "name": "站务员", "aliases": ["引导员"] }
+  }
+}

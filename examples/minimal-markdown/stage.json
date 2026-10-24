@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "chapters": {
+    "intro": {
+      "scene": {
+        "present": [
+          "traveler",
+          "attendant"
+        ],
+        "slots": {
+          "left": "traveler",
+          "right": "attendant"
+        },
+        "focus": "traveler",
+        "expressions": {},
+        "continuity": "intro"
+      },
+      "default": {
+        "present": [
+          "traveler",
+          "attendant"
+        ],
+        "slots": {
+          "left": "traveler",
+          "right": "attendant"
+        },
+        "focus": "traveler",
+        "expressions": {},
+        "background": "bg_default"
+      },
+      "nodes": {}
+    },
+    "judge": {
+      "scene": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "continuity": "judge"
+      },
+      "default": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "background": "bg_default"
+      },
+      "nodes": {}
+    },
+    "ready": {
+      "scene": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "continuity": "ready"
+      },
+      "default": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "background": "bg_default"
+      },
+      "nodes": {}
+    },
+    "missed": {
+      "scene": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "continuity": "missed"
+      },
+      "default": {
+        "present": [],
+        "slots": {},
+        "focus": null,
+        "expressions": {},
+        "background": "bg_default"
+      },
+      "nodes": {}
+    }
+  }
+}

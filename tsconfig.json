@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "packages",
+    "paths": {
+      "@text-adventure/module-api": ["./packages/module-api/src/index.ts"],
+      "@text-adventure/content": ["./packages/content/src/index.ts"],
+      "@text-adventure/core": ["./packages/core/src/index.ts"],
+      "@text-adventure/save": ["./packages/save/src/index.ts"],
+      "@text-adventure/web-adapter": ["./packages/web-adapter/src/index.ts"]
+    },
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["packages/*/src/**/*.ts"]
+}

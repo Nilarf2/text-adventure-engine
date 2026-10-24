@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "id": "minimal-example",
+  "version": "1.0.0",
+  "title": "最小互动示例",
+  "locale": "zh-CN",
+  "start": "intro",
+  "variables": { "count": { "type": "number", "default": 0 } },
+  "nodes": [
+    { "id": "intro", "type": "narration", "lines": [{ "text": "这是一个独立的引擎示例。" }], "next": "choice" },
+    { "id": "choice", "type": "choice", "prompt": "请选择一条路线。", "options": [
+      { "id": "count", "text": "记下一次选择", "next": "counted", "actions": [{ "type": "add", "variable": "count", "value": 1 }] },
+      { "id": "skip", "text": "直接结束", "next": "skipped" }
+    ] },
+    { "id": "counted", "type": "end", "ending": "counted", "text": "记录了 {{count}} 次选择。" },
+    { "id": "skipped", "type": "end", "ending": "skipped", "text": "已直接结束。" }
+  ]
+}

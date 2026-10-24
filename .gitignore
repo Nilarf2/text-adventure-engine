@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+*.tgz
+
+build/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*

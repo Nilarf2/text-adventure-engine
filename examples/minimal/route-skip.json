@@ -1,0 +1,1 @@
+{"seed":1,"steps":[{"node":"intro","command":{"type":"continue"}},{"node":"choice","command":{"type":"choose","optionId":"skip"}}],"ending":"skipped","variables":{"count":0}}

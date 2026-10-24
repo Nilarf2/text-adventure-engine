@@ -1,0 +1,17 @@
+{
+  "source": "story.md",
+  "portraits": "portraits.json",
+  "stage": "stage.json",
+  "out": "../../build/minimal-markdown/story.json",
+  "metadata": {
+    "id": "minimal-markdown",
+    "version": "1.0.0",
+    "locale": "zh-CN"
+  },
+  "tagAliases": {
+    "记下车次": "noted"
+  },
+  "characterAliases": {
+    "attendant": "guide"
+  }
+}

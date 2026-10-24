@@ -1,0 +1,29 @@
+{
+  "name": "text-adventure-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Modular, deterministic text adventure foundation for Web and AI-assisted authoring",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json && node tools/finish-build.mjs",
+    "check:flow": "node tools/check-flow.mjs",
+    "story": "node packages/cli/bin/story.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "example:build": "node tools/build-example.mjs",
+    "check:example": "node tools/authoring/check-route.mjs --story examples/minimal/story.json --route examples/minimal/route-count.json --out build/routes/count.json && node tools/authoring/check-route.mjs --story examples/minimal/story.json --route examples/minimal/route-skip.json --out build/routes/skip.json",
+    "test:tools": "python3 tests/test_tools.py",
+    "example:markdown": "node tools/authoring/compile-markdown.mjs --config examples/minimal-markdown/compiler.json && node packages/cli/bin/story.mjs validate build/minimal-markdown/story.json"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "^22.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@text-adventure/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "story": "./bin/story.mjs"
+  },
+  "dependencies": {
+    "@text-adventure/content": "0.1.0",
+    "@text-adventure/core": "0.1.0"
+  },
+  "private": true,
+  "license": "MIT"
+}
